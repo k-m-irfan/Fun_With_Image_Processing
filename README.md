@@ -1,8 +1,6 @@
 # Computer Vision Builder Series
 
-**************************Requirements: A Linux (Ubuntu) or Windows Machine with a webcam.**************************
-
----
+**Requirements: A Linux (Ubuntu) or Windows Machine with a webcam.**
 
 ![Untitled](./res/Untitled.png)
 
@@ -12,8 +10,6 @@
 | What is being built in this course? | At the end of the course, students will be equipped with all the necessary tools to perform the Build Tasks on their own. They will be building a program to detect and count pulse with a pre-recorded video; A program to cartoonize an image; And finally, a program that detects and tracks a ball bouncing on the ground with the bounce region and timestamp. |
 | How is it being tested? |  |
 | Course Prerequisites | The course requires a student to know the basics of python, PIP (package manager for Python), basic shell commands in Linux, and version control with GIT. |
-
----
 
 # Contents
 
