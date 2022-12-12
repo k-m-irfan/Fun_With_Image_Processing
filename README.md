@@ -1,13 +1,15 @@
 # Computer Vision Builder Series
 
-**Requirements: A Linux (Ubuntu) or Windows Machine with a webcam.**
+**************************Requirements: A Linux (Ubuntu) or Windows Machine with a webcam.**************************
+
+**Download the image and video files used for the sample codes from the course repository here: [CV_Builder_Series](https://github.com/k-m-irfan/CV_Builder_Series)**
 
 ![Untitled](./res/Untitled.png)
 
-| Introduction to the course | This is an introductory course designed for people from any background and are completely new to the area of image processing. |
+| Introduction to the course | This is an introductory course designed for people from any background who is completely new to the area of image processing. You will be learning various functions of OpenCV to manipulate images and videos. |
 | --- | --- |
-| What does this course aim to achieve? | It aims to give hands-on experience with various OpenCV tools and functionalities with many example problems and their solutions for students to work on and understand the usage of tools and functions in OpenCV. |
-| What is being built in this course? | At the end of the course, students will be equipped with all the necessary tools to perform the Build Tasks on their own. They will be building a program to detect and count pulse with a pre-recorded video; A program to cartoonize an image; And finally, a program that detects and tracks a ball bouncing on the ground with the bounce region and timestamp. |
+| What does this course aim to achieve? | It aims to give hands-on practice of various OpenCV tools and functionalities with many example problems and their solutions to work on and understand the use of tools and functions of OpenCV. It also aims to make the learning experience fun by introducing many interesting mini-assignments at the end of each section. |
+| What is being built in this course? | There are three final capstone build tasks: (i) A program to detect and count pulse on a pre-recorded video; (ii) A program to cartoonize an image; (iii) And finally, a program that detects and tracks a ball bouncing on the ground. |
 | How is it being tested? |  |
 | Course Prerequisites | The course requires a student to know the basics of python, PIP (package manager for Python), basic shell commands in Linux, and version control with GIT. |
 
@@ -135,15 +137,34 @@ III. Bounce Count
 
 **Uploading projects to GitHub**
 
----
-
 # Pre-requisite:
 
 **The course requires a student to know the basics of python, PIP (package manager for Python), basic shell commands in Linux, and version control with GIT.**
 
 - You will be using Python programming language for this build task along with OpenCV-Python for manipulating and transforming images (frames) in a video.
-- You will also use PIP which is a package manager for Python-based packages, that will be useful to install/uninstall and manages packages like OpenCV and NumPy, which you will be using throughout this build series.
-- Finally, at the end of the series, you will finish capstone tasks on your own by following the instructions provided and uploading them to your personal GitHub profile to showcase your work to others. For which a basic knowledge of version control with GIT will be useful.
+    
+    ************Why Python?************ 
+    
+    Python is one of the most popular programming languages because of its simplicity which makes it very easy to learn. It is more like plain English and hence easy to read as well. One doesn’t actually need to have any programming knowledge and still be able to easily pick up python. It can achieve tasks in fewer lines of code as compared to other languages. It also supports an extensive number of libraries to work with, thanks to its huge and ever-growing community base. 
+    
+- You will also use PIP which is a package manager for Python-based packages. It is like playstore for Python, using which you can install/ uninstall libraries for python. This will be useful to manage packages like OpenCV and NumPy, which you will be using throughout this build series.
+    
+    **Why OpenCV?**
+    
+    OpenCV is a very popular cross-platform open-source computer vision (CV) and machine learning (ML) library used for real-time vision applications. It has more than 2500 optimized CV and ML algorithms. These algorithms can be used to perform tasks like; detecting and recognizing faces, tracking and identifying objects, tracking camera movements, classifying human actions, extracting 3d models of objects, etc. It also has a huge user community. It has C++, Python, Java, and MATLAB interfaces and supports Windows, Linux, Android, and Mac.
+    
+- You should also know basic shell commands to create, modify and change permission associated with files and folders which might come in handy if you are using a Linux Operating System for this course (Which is also recommended), but you can also finish this course on a windows machine.
+    
+    **Why Linux?**
+    
+    Linux is an operating system just like windows, but it is open source and more secure. You can easily find a Linux machine around you. For eg; computers, servers, tablets, and smartphones (Android), smart TVs, smartwatches and fitness trackers, cameras, embedded devices, robots, gaming consoles, amazon kindle, self-driving cars, navigation systems, routers and modems, IoT devices, and even supercomputers. For a programmer, Linux supports almost all the major programming languages, and the image processing task that you may perform in the future will likely be on one of these machines. Hence, it is good to get familiar with Linux Operating System.
+    
+- Finally, at the end of the series, you will finish capstone tasks (Final Projects) on your own by following the instructions provided and uploading them to your personal GitHub profile to showcase your work. For which a basic knowledge of version control with GIT will be useful.
+    
+    ****************************More about GIT:****************************
+    
+    Git is a version control system that tracks changes in a file as it gets updated. It is commonly used for collaboratively developing the source code of the software. Git makes it easy to work on the same project with multiple people at the same time and independent of each other's version. Multiple collaborators can have their own branch of development, and hence cannot interfere with other collaborators’ work and finally, all of them can be merged together.
+    
 
 **********Hence it is assumed that the person following this builder series is familiar with the Pre-requisites. If not, the following resources might be useful to get started:**********
 
@@ -162,8 +183,6 @@ III. Bounce Count
     - For a quick demo: [https://www.youtube.com/watch?v=c6b6B9oN4Vg](https://www.youtube.com/watch?v=c6b6B9oN4Vg)
     - For interactive git learning (Optional): [https://learngitbranching.js.org/](https://learngitbranching.js.org/)
 
----
-
 # **Core Computer Vision Learning Track:**
 
 ## 1. Introduction:
@@ -176,10 +195,8 @@ III. Bounce Count
 - Each section will walk you through some useful tools and functions and then example programs using those tools to achieve simple tasks. The Example codes are well commented to give you as much information as possible.
 - At the end of each section, there is an Assignment task for which the solution is not provided. These Assignments are designed in such a way that it tests your knowledge and understanding of the concepts until that point of the course.
 - We will be using OpenCV, a popular and open-sourced image processing library along with python programming language. And for writing the code we will be using Visual Studio Code which is an IDE that contains everything in one place and also some helper plugins that will assist and make your coding work easy.
-- At the end of the course, you will be equipped with all the necessary tools to perform the Build Tasks on your own. And finally, we will guide you to upload your projects and work repository to your personal GitHub account.
+- At the end of the course, you will be equipped with all the necessary tools to perform the Build Tasks on your own. And finally, we will guide you to upload your projects/work repository to your personal GitHub account.
 - Hope you enjoy this!
-
----
 
 ## 2. Reading - High-level overview of Video Encoding and ffmpeg:
 
@@ -193,8 +210,6 @@ III. Bounce Count
     
     [https://blog.cloudflare.com/making-video-intuitive-an-explainer/](https://blog.cloudflare.com/making-video-intuitive-an-explainer/)
     
-
----
 
 ## 3. Setting up Python, OpenCV, and Visual Studio Code:
 
@@ -286,8 +301,6 @@ III. Bounce Count
 ![Untitled](./res/Untitled%2018.png)
 
 - After installation, the remaining instructions are the same as instructions for Windows.
-
----
 
 ## 4. Reading and saving image files using OpenCV:
 
@@ -427,8 +440,6 @@ III. Bounce Count
 **********Expected Output:**********
 
 ![Untitled](./res/Untitled%2022.png)
-
----
 
 ## 5. Reading and saving the video feed:
 
@@ -768,8 +779,6 @@ cv2.destroyAllWindows() # Close all the active windows
 
 ![Untitled](./res/Untitled%201.gif)
 
----
-
 ## 6. Drawing Functions:
 
 **************************Objective: In this section, you will learn how to draw objects like lines, rectangles, circles, text, etc. on an image.**************************
@@ -892,8 +901,6 @@ cv2.destroyAllWindows() # Close all the active windows
 ********************************Expected Output:********************************
 
 ![Untitled](./res/Untitled%202.gif)
-
----
 
 ## 7. Interacting with the video:
 
@@ -1229,8 +1236,6 @@ cv2.destroyAllWindows()
 
 ![Untitled](./res/Untitled%207.gif)
 
----
-
 ## 8. Object detection and tracking with a color mask.
 
 **************************************************************************************************************************Objective: In this section, you will learn how to select and mask a color, find contours around the masked color, and then create a bounding box around it for tracking. You will also learn how to detect and track anything using a template image of an interesting object.**************************************************************************************************************************
@@ -1415,8 +1420,6 @@ cv2.destroyAllWindows()
 ********************************Expected Output:********************************
 
 ![Untitled](./res/Untitled%2010.gif)
-
----
 
 ## 9. Frame manipulation and transformation:
 
@@ -1807,8 +1810,6 @@ cv2.destroyAllWindows()
 
 ![Untitled](./res/Untitled%2014.gif)
 
----
-
 # Capstone Build Tasks:
 
 **Follow the guided steps in order to finish this build task. Most of the OpenCV tools required to execute these tasks have already been covered in the tutorial above. Hence here we will not be providing the example codes. These build tasks will test your understanding of the concepts and tools from the tutorial.**
@@ -1896,8 +1897,6 @@ cv2.destroyAllWindows()
     ```
     
 
----
-
 ### II. Pulse Count:
 
 ************************************PROBLEM STATEMENT:************************************
@@ -1962,13 +1961,11 @@ cv2.destroyAllWindows()
     ```
     
 
----
-
 ### III. Bounce Count:
 
 **PROBLEM STATEMENT:**
 
-- A video has been provided for this task and can be downloaded from here (ADD LINK) in which a ball is dropped randomly on a 2x2 grid.
+- A video has been provided for this task and can be downloaded from here **[(bounce)](https://github.com/k-m-irfan/CV_Builder_Series/blob/main/capstone_build_tasks/bounce/Input.mov)** in which a ball is dropped randomly on a 2x2 grid.
 - Your task is to track the ball and detect when it touches the ground and, to find out when and in which region it bounced and also the total number of times it bounced from the ground.
 - The program should draw the boundaries around the 4 quadrants, detect and track the ball, and print out the information as given below.
     
@@ -2048,8 +2045,6 @@ cv2.destroyAllWindows()
     ```
     
 
----
-
 # Uploading projects to GitHub:
 
 ********************************************************************Objective: To upload your build task projects on your personal GitHub. Follow the step-by-step instruction given below to finish the task.********************************************************************
@@ -2076,7 +2071,7 @@ cv2.destroyAllWindows()
     
     ![Untitled](./res/Untitled%2038.png)
     
-- Now come back to the terminal/command prompt and run this command: `git remote add origin https://github.com/***your_usernane***/CV_Builder_Series.git` . This will link the remote and the local repository. Don't forget to change it to your username in the above link.
+- Now come back to the terminal/command prompt and run this command: `git remote add origin https://github.com/***your_usernane***/CV_Builder_Series.git` . This will link the remote and the local repository. Don't forget to add your username in the above link.
 - Create the main branch using the command: `git branch -M main`
 - Now you are ready to push your project files to GitHub. Run `git push -u origin main` to push the commits to GitHub.
 - If you are doing it for the first time GIT may ask for your GitHub ID and password. In place of a password you have to provide a token that can be generated by following the steps below:
@@ -2110,7 +2105,5 @@ cv2.destroyAllWindows()
     
     ![Untitled](./res/Untitled%2047.png)
     
-
----
 
 ### End of Build Series!
