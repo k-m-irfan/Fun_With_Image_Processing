@@ -16,126 +16,123 @@
 
 # Contents
 
-**Pre-requisite.**
+[**Pre-requisite.**](https://github.com/k-m-irfan/CV_Builder_Series#pre-requisite)
 
 1. Shell
 2. Python-Pip
 3. Git
 
-**Core Computer Vision Learning Track:**
+[**Core Computer Vision Learning Track:**](https://github.com/k-m-irfan/CV_Builder_Series#core-computer-vision-learning-track)
 
-1. Introduction
-2. Reading - High-level overview of Video Encoding and ffmpeg
+1. [Introduction](https://github.com/k-m-irfan/CV_Builder_Series#1-introduction)
+2. [Reading - High-level overview of Video Encoding and ffmpeg](https://github.com/k-m-irfan/CV_Builder_Series#2-reading---high-level-overview-of-video-encoding-and-ffmpeg)
     
 	- Video Encoding - Compression and Resolutions
 
 	- Making Video Intuitive: An Explainer
     
-3. Setting up Python, OpenCV, and Visual Studio Code
+3. [Setting up Python, OpenCV, and Visual Studio Code](https://github.com/k-m-irfan/CV_Builder_Series#3-setting-up-python-opencv-and-visual-studio-code)
     
-	- Installing Python
+	- [Installing Python](https://github.com/k-m-irfan/CV_Builder_Series#installing-python)
 
 		- Windows
 
 		- Linux (Ubuntu)
 
-	- Installing OpenCV
+	- [Installing OpenCV](https://github.com/k-m-irfan/CV_Builder_Series#installing-opencv)
 
-	- Installing and setting up Visual Studio Code
+	- [Installing and setting up Visual Studio Code](https://github.com/k-m-irfan/CV_Builder_Series#installing-and-setting-up-visual-studio-code)
 
 		- Windows
 
 		- Linux (Ubuntu)
 
-4. Reading and saving image files using OpenCV
+4. [Reading and saving image files using OpenCV](https://github.com/k-m-irfan/CV_Builder_Series#4-reading-and-saving-image-files-using-opencv)
 
-	- Reading image files
+	- [Reading image files](https://github.com/k-m-irfan/CV_Builder_Series#reading-image-files)
 
-	- Changing colorspace
+	- [Changing colorspace](https://github.com/k-m-irfan/CV_Builder_Series#changing-colorspace)
 
-	- Saving/writing image files
+	- [Saving/writing image files](https://github.com/k-m-irfan/CV_Builder_Series#savingwriting-image-file)
 
-	- Assignment_1
+	- [Assignment_1](https://github.com/k-m-irfan/CV_Builder_Series#assignment_1)
 
-5. Reading and saving the video feed
+5. [Reading and saving the video feed](https://github.com/k-m-irfan/CV_Builder_Series#5-reading-and-saving-the-video-feed)
 
-	- Launching the camera
+	- [Launching the camera](https://github.com/k-m-irfan/CV_Builder_Series#launching-the-camera)
 
-	- Getting video properties
+	- [Getting video properties](https://github.com/k-m-irfan/CV_Builder_Series#getting-video-properties)
 
-	- Changing video properties
+	- [Changing video properties](https://github.com/k-m-irfan/CV_Builder_Series#changing-video-properties)
 
-	- Accessing and manipulating pixels
+	- [Accessing and manipulating pixels](https://github.com/k-m-irfan/CV_Builder_Series#accessing-and-manipulating-pixels)
 
-	- Saving the video
+	- [Saving the video](https://github.com/k-m-irfan/CV_Builder_Series#saving-the-video)
 
-	- Assignment_2
+	- [Assignment_2](https://github.com/k-m-irfan/CV_Builder_Series#assignment_2)
 
-6. Drawing Functions
+6. [Drawing Functions](https://github.com/k-m-irfan/CV_Builder_Series#6-drawing-functions)
 
-	- Line, Arrowed Line, Polylines, Rectangle, Circle, Put Text
+	- [Line, Arrowed Line, Polylines, Rectangle, Circle, Put Text](https://github.com/k-m-irfan/CV_Builder_Series#6-drawing-functions)
 
-	- Assignment_3
+	- [Assignment_3](https://github.com/k-m-irfan/CV_Builder_Series#assignment_3)
 
-7. Interacting with the video
+7. [Interacting with the video](https://github.com/k-m-irfan/CV_Builder_Series#7-interacting-with-the-video)
 
-	- Mouse Events
+	- [Mouse Events](https://github.com/k-m-irfan/CV_Builder_Series#mouse-events)
 
-	- Draw a rectangle with a mouse
+	- [Draw a rectangle with a mouse](https://github.com/k-m-irfan/CV_Builder_Series#draw-a-rectangle-with-mouse)
 
-	- Draw a curve using a mouse
+	- [Draw a curve using a mouse](https://github.com/k-m-irfan/CV_Builder_Series#draw-a-curve-using-a-mouse)
 
-	- Interacting with trackbars in OpenCV
+	- [Interacting with trackbars in OpenCV](https://github.com/k-m-irfan/CV_Builder_Series#interacting-with-trackbars-in-opencv)
 
-	- Assignment_4
+	- [Assignment_4](https://github.com/k-m-irfan/CV_Builder_Series#assignment_4)
 
-8. Object detection and tracking with color mask.
+8. [Object detection and tracking with color mask](https://github.com/k-m-irfan/CV_Builder_Series#8-object-detection-and-tracking-with-a-color-mask)
+	- [Masking color](https://github.com/k-m-irfan/CV_Builder_Series#masking-color)
 
-	- Understanding HSV colorspace
+	- [Finding contours and bounding box](https://github.com/k-m-irfan/CV_Builder_Series#finding-contours-and-bounding-box)
 
-	- Masking color
+	- [Assignment_5](https://github.com/k-m-irfan/CV_Builder_Series#assignment_5)
 
-	- Finding contours and bounding box
+9. [Frame manipulation and transformation](https://github.com/k-m-irfan/CV_Builder_Series#9-frame-manipulation-and-transformation)
 
-	- Assignment_5 
+	- [Resize](https://github.com/k-m-irfan/CV_Builder_Series#resize)
 
-9. Frame manipulation and transformation:
+	- [Rotate](https://github.com/k-m-irfan/CV_Builder_Series#rotate)
 
-	- Resize
+	- [Edge detection](https://github.com/k-m-irfan/CV_Builder_Series#edge-detection)
 
-	- Rotate
+	- [Finding and drawing contours](https://github.com/k-m-irfan/CV_Builder_Series#finding-and-drawing-contours)
 
-	- Edge detection
+	- [Smoothening](https://github.com/k-m-irfan/CV_Builder_Series#smoothening)
 
-	- Finding and drawing contours
+	- [Perspective warping](https://github.com/k-m-irfan/CV_Builder_Series#perspective-warping)
 
-	- Smoothening
+	- [Assignment_6](https://github.com/k-m-irfan/CV_Builder_Series#assignment_6)
 
-	- Perspective warping
+[**Capstone Build Tasks**](https://github.com/k-m-irfan/CV_Builder_Series#capstone-build-tasks)
 
-	- Assignment_6
-
-**Capstone Build Tasks**
-
-I. Posterization (Cartoonization) of portraits
+I. [Posterization (Cartoonization) of portraits](https://github.com/k-m-irfan/CV_Builder_Series#i-posterization-cartoonization-of-portraits)
 
 - Problem statement
 
 - Guided steps
 
-II. Pulse Count
+II. [Pulse Count](https://github.com/k-m-irfan/CV_Builder_Series#ii-pulse-count)
 
 - Problem statement
 
 - Guided steps
 
-III. Bounce Count
+III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-count)
 
 - Problem statement
 
 - Guided steps
 
-**Uploading projects to GitHub**
+[**Uploading projects to GitHub**](https://github.com/k-m-irfan/CV_Builder_Series#uploading-projects-to-github)
 
 # Pre-requisite:
 
@@ -1347,7 +1344,7 @@ III. Bounce Count
 
 	![Untitled](./res/Untitled%208.gif)
 
-### **FINDING CONTOURS:**
+### **FINDING CONTOURS AND BOUNDING BOX:**
 
 - Since we now have the color bound for masking the blue color, we can now apply it on a video to mask the blue ball, find the contours around it, and then the bounding box to track the blue ball.
 - `findContours` function is used to get contours from a binary image. A binary image only contains two values 0 for black and 1 for white.
