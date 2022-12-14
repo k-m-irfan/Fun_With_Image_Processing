@@ -9,8 +9,8 @@
 |  |  |
 | --- | --- |
 | Introduction to the course | This is an introductory course designed for people from any background who is completely new to the area of image processing. You will be learning various functions of OpenCV to manipulate images and videos. |
-| What does this course aim to achieve? | It aims to give hands-on practice of various OpenCV tools and functionalities with many example problems and their solutions to work on and understand the use of tools and functions of OpenCV. It also aims to make the learning experience fun by introducing many interesting mini-assignments at the end of each section. |
-| What is being built in this course? | There are three final capstone build tasks: (i) A program to detect and count pulse on a pre-recorded video; (ii) A program to cartoonize an image; (iii) And finally, a program that detects and tracks a ball bouncing on the ground. |
+| What does this course aim to achieve? | It aims to give hands-on practice of various OpenCV tools and functionalities with many example problems and their solutions to work on and understand the use of tools and functions of OpenCV. It also aims to make the learning experience fun by introducing many interesting warmup exercises at the end of each section. |
+| What is being built in this course? | There are three final capstone build Projects: (i) A program to detect and count pulse on a pre-recorded video; (ii) A program to cartoonize an image; (iii) And finally, a program that detects and tracks a ball bouncing on the ground. |
 | How is it being tested? |  |
 | Course Prerequisites | The course requires a student to know the basics of python, PIP (package manager for Python), basic shell commands in Linux, and version control with GIT. |
 
@@ -55,7 +55,7 @@
 
 	- [Saving/writing image files](https://github.com/k-m-irfan/CV_Builder_Series#savingwriting-image-file)
 
-	- [Assignment_1](https://github.com/k-m-irfan/CV_Builder_Series#assignment_1)
+	- [Warmup_Exercise_1](https://github.com/k-m-irfan/CV_Builder_Series#warmup_exercise_1)
 
 5. [Reading and saving the video feed](https://github.com/k-m-irfan/CV_Builder_Series#5-reading-and-saving-the-video-feed)
 
@@ -69,13 +69,13 @@
 
 	- [Saving the video](https://github.com/k-m-irfan/CV_Builder_Series#saving-the-video)
 
-	- [Assignment_2](https://github.com/k-m-irfan/CV_Builder_Series#assignment_2)
+	- [Warmup_Exercise_2](https://github.com/k-m-irfan/CV_Builder_Series#warmup_exercise_2)
 
 6. [Drawing Functions](https://github.com/k-m-irfan/CV_Builder_Series#6-drawing-functions)
 
 	- [Line, Arrowed Line, Polylines, Rectangle, Circle, Put Text](https://github.com/k-m-irfan/CV_Builder_Series#6-drawing-functions)
 
-	- [Assignment_3](https://github.com/k-m-irfan/CV_Builder_Series#assignment_3)
+	- [Warmup_Exercise_3](https://github.com/k-m-irfan/CV_Builder_Series#warmup_exercise_3)
 
 7. [Interacting with the video](https://github.com/k-m-irfan/CV_Builder_Series#7-interacting-with-the-video)
 
@@ -87,14 +87,14 @@
 
 	- [Interacting with trackbars in OpenCV](https://github.com/k-m-irfan/CV_Builder_Series#interacting-with-trackbars-in-opencv)
 
-	- [Assignment_4](https://github.com/k-m-irfan/CV_Builder_Series#assignment_4)
+	- [Warmup_Exercise_4](https://github.com/k-m-irfan/CV_Builder_Series#warmup_exercise_4)
 
 8. [Object detection and tracking with color mask](https://github.com/k-m-irfan/CV_Builder_Series#8-object-detection-and-tracking-with-a-color-mask)
 	- [Masking color](https://github.com/k-m-irfan/CV_Builder_Series#masking-color)
 
 	- [Finding contours and bounding box](https://github.com/k-m-irfan/CV_Builder_Series#finding-contours-and-bounding-box)
 
-	- [Assignment_5](https://github.com/k-m-irfan/CV_Builder_Series#assignment_5)
+	- [Warmup_Exercise_5](https://github.com/k-m-irfan/CV_Builder_Series#warmup_exercise_5)
 
 9. [Frame manipulation and transformation](https://github.com/k-m-irfan/CV_Builder_Series#9-frame-manipulation-and-transformation)
 
@@ -110,9 +110,9 @@
 
 	- [Perspective warping](https://github.com/k-m-irfan/CV_Builder_Series#perspective-warping)
 
-	- [Assignment_6](https://github.com/k-m-irfan/CV_Builder_Series#assignment_6)
+	- [Warmup_Exercise_6](https://github.com/k-m-irfan/CV_Builder_Series#warmup_exercise_6)
 
-[**Capstone Build Tasks**](https://github.com/k-m-irfan/CV_Builder_Series#capstone-build-tasks)
+[**Capstone Build Projects**](https://github.com/k-m-irfan/CV_Builder_Series#capstone-build-tasks)
 
 I. [Posterization (Cartoonization) of portraits](https://github.com/k-m-irfan/CV_Builder_Series#i-posterization-cartoonization-of-portraits)
 
@@ -190,7 +190,7 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
     - Capstone Build Task
     - Uploading Projects to GitHub
 - Each section will walk you through some useful tools and functions and then example programs using those tools to achieve simple tasks. The Example codes are well commented to give you as much information as possible.
-- At the end of each section, there is an Assignment task for which the solution is not provided. These Assignments are designed in such a way that it tests your knowledge and understanding of the concepts until that point of the course.
+- At the end of each section, there are warmup exercises for which the solutions are not provided. These exercises are designed in such a way that it tests your knowledge and understanding of the concepts until that point of the course.
 - We will be using OpenCV, a popular and open-sourced image processing library along with python programming language. And for writing the code we will be using Visual Studio Code which is an IDE that contains everything in one place and also some helper plugins that will assist and make your coding work easy.
 - At the end of the course, you will be equipped with all the necessary tools to perform the Build Tasks on your own. And finally, we will guide you to upload your projects/work repository to your personal GitHub account.
 - Hope you enjoy this!
@@ -424,7 +424,7 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
     ![Untitled](./res/Untitled%2021.png)
     
 
-### **ASSIGNMENT_1:** 
+### **WARMUP_EXERCISE_1:** 
 
 - Read 2 different images.
 - Create a new image by arranging them side-by-side.
@@ -765,7 +765,7 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
 	cv2.destroyAllWindows() # Close all the active windows
 	```
 
-### **ASSIGNMENT_2:**
+### **WARMUP_EXERCISE_2:**
 
 - Create a 4x4 checkerboard with black and white colors, and then create a video where the checkerboard inverts color every second.
 - Hint: `cv2.bitwise_not()` function might be useful to invert the checkerboard.
@@ -887,7 +887,7 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
     ![Untitled](./res/Untitled%2024.png)
     
 
-### **ASSIGNMENT_3:**
+### **WARMUP_EXERCISE_3:**
 
 - Create a basic version of chrome’s dino game. You don’t have to build an exact copy of it.
 - A simple ball for dino, rectangular bars for the obstacles that move towards the ball, and then the ball jumps when you press space. (use `waitKey` along with space bar detection, just like we do for quitting the program when you press ‘q’)
@@ -1223,7 +1223,7 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
 
 	![Untitled](./res/Untitled%206.gif)
 
-### **ASSIGNMENT_4:**
+### **WARMUP_EXERCISE_4:**
 
 - Create a simple program that can read an image, and crop a part of it by mouse click and drag (just like we did for drawing the rectangle), and on mouse release, it should save the cropped image in the current working directory.
 
@@ -1405,7 +1405,7 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
 
 	![Untitled](./res/Untitled%209.gif)
 
-### **ASSIGNMENT_5:**
+### **WARMUP_EXERCISE_5:**
 
 - Write a program that removes the background (Green Screen) from the webcam feed and replace the background with other images, just like we have on zoom calls.
 - Try putting a solid colored canvas behind you so that the color detection and masking become easy. (OR try with the given sample video)
@@ -1795,7 +1795,7 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
     ![Untitled](./res/Untitled%2013.gif)
     
 
-### **ASSIGNMENT_6:**
+### **WARMUP_EXERCISE_6:**
 
 - Create a very simple photo editor using track bars and tools covered in this section to achieve the following:
     - Filters, zooming, rotating, blurring, sketching effect (edge detection), and finally cropping and saving the cropped part of the image.
@@ -1805,7 +1805,7 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
 
 	![Untitled](./res/Untitled%2014.gif)
 
-# Capstone Build Tasks:
+# Capstone Build Projects:
 
 **Follow the guided steps in order to finish this build task. Most of the OpenCV tools required to execute these tasks have already been covered in the tutorial above. Hence here we will not be providing the example codes. These build tasks will test your understanding of the concepts and tools from the tutorial.**
 
