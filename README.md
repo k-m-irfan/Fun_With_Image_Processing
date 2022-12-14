@@ -28,13 +28,13 @@
 
 1. [Introduction](https://github.com/k-m-irfan/CV_Builder_Series#1-introduction)
 2. [Reading - High-level overview of Video Encoding and ffmpeg](https://github.com/k-m-irfan/CV_Builder_Series#2-reading---high-level-overview-of-video-encoding-and-ffmpeg)
-    
+
 	- Video Encoding - Compression and Resolutions
 
 	- Making Video Intuitive: An Explainer
-    
+
 3. [Setting up Python, OpenCV, and Visual Studio Code](https://github.com/k-m-irfan/CV_Builder_Series#3-setting-up-python-opencv-and-visual-studio-code)
-    
+
 	- [Installing Python](https://github.com/k-m-irfan/CV_Builder_Series#installing-python)
 
 		- Windows
@@ -136,6 +136,8 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
 
 [**Uploading projects to GitHub**](https://github.com/k-m-irfan/CV_Builder_Series#uploading-projects-to-github)
 
+<br>
+
 # Pre-requisite:
 
 **The course requires a student to know the basics of python, PIP (package manager for Python), basic shell commands in Linux, and version control with GIT.**
@@ -186,8 +188,6 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
 
 # **Core Computer Vision Learning Track:**
 
-<br>
-
 ## 1. Introduction:
 
 - This is an introductory course is designed for people who are from any background and are completely new to the area of image processing.
@@ -219,7 +219,7 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
     
 ## 3. Setting up Python, OpenCV, and Visual Studio Code:
 
-### **Installing Python:**
+>### **Installing Python:**
 
 **Windows:**
 
@@ -249,12 +249,15 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
     **user**:~$ sudo apt update
     **user**:~$ sudo apt install python3
     ```
-    
+
+<br>
 
 ### **Installing OpenCV:**
 
 - Open Terminal or Command Prompt and run `pip install opencv-python` to install OpenCV Library.
 - For more details or troubleshooting refer: [https://pypi.org/project/opencv-python/](https://pypi.org/project/opencv-python/)
+
+<br>
 
 ### **Installing and setting up Visual Studio Code:**
 
@@ -354,6 +357,7 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
     
     ![Untitled](./res/Untitled%2019.png)
     
+<br>
 
 ### **CHANGING COLORSPACE**
 
@@ -393,7 +397,8 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
     **Expected Output:**
     
     ![Untitled](./res/Untitled%2020.png)
-    
+
+<br>
 
 ### **SAVING/WRITING IMAGE FILE**
 
@@ -435,6 +440,7 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
     
     ![Untitled](./res/Untitled%2021.png)
     
+<br>
 
 ### **WARMUP_EXERCISE_1:** 
 
