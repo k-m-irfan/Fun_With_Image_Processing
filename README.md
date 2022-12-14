@@ -14,6 +14,8 @@
 | How is it being tested? |  |
 | Course Prerequisites | The course requires a student to know the basics of python, PIP (package manager for Python), basic shell commands in Linux, and version control with GIT. |
 
+<br>
+
 # Contents
 
 [**Pre-requisite.**](https://github.com/k-m-irfan/CV_Builder_Series#pre-requisite)
@@ -180,7 +182,11 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
     - For a quick demo: [https://www.youtube.com/watch?v=c6b6B9oN4Vg](https://www.youtube.com/watch?v=c6b6B9oN4Vg)
     - For interactive git learning (Optional): [https://learngitbranching.js.org/](https://learngitbranching.js.org/)
 
+<br>
+
 # **Core Computer Vision Learning Track:**
+
+<br>
 
 ## 1. Introduction:
 
@@ -195,6 +201,8 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
 - At the end of the course, you will be equipped with all the necessary tools to perform the Build Tasks on your own. And finally, we will guide you to upload your projects/work repository to your personal GitHub account.
 - Hope you enjoy this!
 
+<br>
+
 ## 2. Reading - High-level overview of Video Encoding and ffmpeg:
 
 **Objective: In this, you will learn what is a video and a few important concepts around it such as resolution, compression, frame rate (FPS), Bitrate, etc.**
@@ -206,6 +214,8 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
 - **Making Video Intuitive: An Explainer:**
     
     [https://blog.cloudflare.com/making-video-intuitive-an-explainer/](https://blog.cloudflare.com/making-video-intuitive-an-explainer/)
+    
+<br>
     
 ## 3. Setting up Python, OpenCV, and Visual Studio Code:
 
@@ -297,6 +307,8 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
 	![Untitled](./res/Untitled%2018.png)
 
 - After installation, the remaining instructions are the same as instructions for Windows.
+
+<br>
 
 ## 4. Reading and saving image files using OpenCV:
 
@@ -436,6 +448,8 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
 	**Expected Output:**
 
 	![Untitled](./res/Untitled%2022.png)
+	
+<br>
 
 ## 5. Reading and saving the video feed:
 
@@ -773,6 +787,8 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
 	**Expected Output:**
 
 	![Untitled](./res/Untitled%201.gif)
+	
+<br>
 
 ## 6. Drawing Functions:
 
@@ -896,6 +912,8 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
 	**Expected Output:**
 
 	![Untitled](./res/Untitled%202.gif)
+
+<br>
 
 ## 7. Interacting with the video:
 
@@ -1230,6 +1248,8 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
 	**Expected Output:**
 
 	![Untitled](./res/Untitled%207.gif)
+	
+<br>
 
 ## 8. Object detection and tracking with a color mask.
 
@@ -1415,6 +1435,8 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
 	**Expected Output:**
 
 	![Untitled](./res/Untitled%2010.gif)
+	
+<br>
 
 ## 9. Frame manipulation and transformation:
 
@@ -1462,7 +1484,6 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
     
     ![Untitled](./res/Untitled%2026.png)
     
-
 ### **ROTATE:**
 
 - To rotate an image use `rotate` function:
@@ -1541,7 +1562,6 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
     **Expected Output:**
     
     ![Untitled](./res/Untitled%2028.png)
-    
 
 ### **EDGE DETECTION:**
 
@@ -1581,7 +1601,6 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
     **Expected Output:**
     
     ![Untitled](./res/Untitled%2029.png)
-    
     
 ### **FINDING AND DRAWING CONTOURS:**
 
@@ -1636,7 +1655,6 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
     
     ![Untitled](./res/Untitled%2030.png)
     
-    
 ### **SMOOTHENING:**
 
 - There are different methods of smoothening images in OpenCV. We will try out `medianBlur` and `GaussianBlur` in this task. For more details on smoothening refer: **[Smoothing Images](https://docs.opencv.org/4.x/d4/d13/tutorial_py_filtering.html)**
@@ -1688,7 +1706,6 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
     
     ![Untitled](./res/Untitled%2031.png)
     
-
 ### **PERSPECTIVE WARPING:**
 
 - In order to perform perspective warping we need 4 points from the original image that we can stretch and convert to a top view. Therefore first, create a python file `task_6_2.py` that prints out the points whenever we left-click on the image. In this way, we can extract the 4 corner points for the warped image from the original image easily.
@@ -1794,7 +1811,6 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
     
     ![Untitled](./res/Untitled%2013.gif)
     
-
 ### **WARMUP_EXERCISE_6:**
 
 - Create a very simple photo editor using track bars and tools covered in this section to achieve the following:
@@ -1804,6 +1820,8 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
 	**Expected Output:**
 
 	![Untitled](./res/Untitled%2014.gif)
+	
+<br>
 
 # Capstone Build Projects:
 
@@ -1891,7 +1909,6 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
     ## Code for displaying "Original Vs Posterized Image"
     ```
     
-
 ### II. Finding Heart Rate (Pulse):
 
 **PROBLEM STATEMENT:**
@@ -1955,7 +1972,6 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
     # Code for extracting the pulse rate
     ```
     
-
 ### III. Bounce Count:
 
 **PROBLEM STATEMENT:**
@@ -2100,5 +2116,4 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
     
     ![Untitled](./res/Untitled%2047.png)
     
-
 ### End of Build Series!
