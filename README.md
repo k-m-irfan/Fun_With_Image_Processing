@@ -120,7 +120,7 @@ I. [Posterization (Cartoonization) of portraits](https://github.com/k-m-irfan/CV
 
 - Guided steps
 
-II. [Finding Heart Rate (Pulse)](https://github.com/k-m-irfan/CV_Builder_Series#ii-pulse-count)
+II. [Finding Heart Rate (Pulse)](https://github.com/k-m-irfan/CV_Builder_Series#ii-finding-heart-rate-pulse)
 
 - Problem statement
 
