@@ -252,14 +252,14 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
 
 <br>
 
-### **Installing OpenCV:**
+>### **Installing OpenCV:**
 
 - Open Terminal or Command Prompt and run `pip install opencv-python` to install OpenCV Library.
 - For more details or troubleshooting refer: [https://pypi.org/project/opencv-python/](https://pypi.org/project/opencv-python/)
 
 <br>
 
-### **Installing and setting up Visual Studio Code:**
+>### **Installing and setting up Visual Studio Code:**
 
 **Windows:**
 
@@ -317,7 +317,7 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
 
 **Objective: In this section, you will learn how to read an image and save it after converting it to Grayscale. Check out the example code below.**
 
-### **READING IMAGE FILES**
+>### **READING IMAGE FILES**
 
 - Before starting create a folder on the desktop named “CV_Builder_Series”, and another folder named “task_1” in it.
 - Open VS Code > press `Ctrl + K + O` to open a project folder > Navigate to the desktop and open “CV_Builder_Series”.
@@ -359,7 +359,7 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
     
 <br>
 
-### **CHANGING COLORSPACE**
+>### **CHANGING COLORSPACE**
 
 - Now try using `cvtColor` to convert the image to Grayscale using `COLOR_BGR2GRAY` option in the previous code and display both images using `imshow`
     
@@ -400,7 +400,7 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
 
 <br>
 
-### **SAVING/WRITING IMAGE FILE**
+>### **SAVING/WRITING IMAGE FILE**
 
 - Lets save the gray image using `imwrite` function.
     
@@ -442,7 +442,7 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
     
 <br>
 
-### **WARMUP_EXERCISE_1:** 
+>### **WARMUP_EXERCISE_1:** 
 
 - Read 2 different images.
 - Create a new image by arranging them side-by-side.
@@ -461,7 +461,7 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
 
 **Objective: In this section, you will learn how to get a video feed from a camera as well as from a video file, some useful functions to get and also set the video properties, and access and manipulate the pixel values.** 
 
-### **LAUNCHING THE CAMERA**
+>### **LAUNCHING THE CAMERA**
 
 - For this task, you will be using the function `VideoCapture` to create a video capture object that connects the camera. It can either take in a camera as a parameter (an integer) or a video file path, or any IP camera.
 - Another function `read` is used to read frames one by one from the video capture object on which we can perform image processing. A function `imshow` is used to display the frame in a window.
@@ -517,7 +517,7 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
 
 	![Untitled](./res/Untitled.gif)
 
-### **GETTING VIDEO PROPERTIES:**
+>### **GETTING VIDEO PROPERTIES:**
 
 - There are a few useful functions in OpenCV to get information about the input video feed such as width, height, and fps.
 - Try using the `cv2.CAP_PROP_FRAME_WIDTH`, `cv2.CAP_PROP_FRAME_HEIGHT`, and `cv2.CAP_PROP_FPS` to get the width, height, and fps respectively. Here is a list of other properties that you can access: **[VideoCaptureProperties](https://docs.opencv.org/3.4/d4/d15/group__videoio__flags__base.html#gaeb8dd9c89c10a5c63c139bf7c4f5704d).**
@@ -571,7 +571,7 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
 	resolution: 640.0 x 480.0 | frames per second: 30.0
 	```
 
-### **CHANGING VIDEO PROPERTIES:**
+>### **CHANGING VIDEO PROPERTIES:**
 
 - You can also set the video properties using `set` function which is similar to the `get` function in the above example.
 - It takes in two arguments; the property and the value for it.
@@ -635,7 +635,7 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
 - Notice how the resolution changed but the fps didn’t. This is because it will only accept the properties supported by your camera.
 - You can try other resolutions, if the camera supports the resolution, it will work, otherwise, it won't.
 
-### **ACCESSING AND MANIPULATING PIXELS:**
+>### **ACCESSING AND MANIPULATING PIXELS:**
 
 - Here you will learn how to experiment with pixels by accessing and changing their values.
 - Use the first example code from task_1 to read an image. OpenCV reads images in numpy array format.
@@ -728,7 +728,7 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
 
 - You can experiment around with this by only changing the color of a small square at the corner or at the center of the frame. Play around and get comfortable with accessing and manipulating pixels.
 
-### **SAVING THE VIDEO:**
+>### **SAVING THE VIDEO:**
 
 - We can reuse the first “Example Code” and save the webcam feed.
 - To save the video we can create an `output` object using the function `VideoWriter`
@@ -785,7 +785,7 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
 	cv2.destroyAllWindows() # Close all the active windows
 	```
 
-### **WARMUP_EXERCISE_2:**
+>### **WARMUP_EXERCISE_2:**
 
 - Create a 4x4 checkerboard with black and white colors, and then create a video where the checkerboard inverts color every second.
 - Hint: `cv2.bitwise_not()` function might be useful to invert the checkerboard.
@@ -909,7 +909,7 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
     ![Untitled](./res/Untitled%2024.png)
     
 
-### **WARMUP_EXERCISE_3:**
+>### **WARMUP_EXERCISE_3:**
 
 - Create a basic version of chrome’s dino game. You don’t have to build an exact copy of it.
 - A simple ball for dino, rectangular bars for the obstacles that move towards the ball, and then the ball jumps when you press space. (use `waitKey` along with space bar detection, just like we do for quitting the program when you press ‘q’)
@@ -925,7 +925,7 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
 
 **Objective: In this section, you will learn how to interact with the frame/window with mouse events and trackbars.**
 
-### **MOUSE EVENTS:**
+>### **MOUSE EVENTS:**
 
 - Create a folder named “task_4” inside “CV_Builder_Series”.
 - Create a new file named `task_4.py` inside the folder “task_4”. And import `cv2` and `numpy`.
@@ -1002,7 +1002,7 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
 	4 198 209 0 None
 	```
 
-### **DRAW A RECTANGLE WITH MOUSE**
+>### **DRAW A RECTANGLE WITH MOUSE**
 
 - Let’s draw a rectangle by dragging the mouse, on left click press, and stop on release. For this we need a few global variables initialized as follows:
 
@@ -1069,7 +1069,7 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
 
 	![Untitled](./res/Untitled%203.gif)
 
-### **DRAW A CURVE USING A MOUSE**
+>### **DRAW A CURVE USING A MOUSE**
 
 - Let’s now draw a curve with mouse click drag and stop drawing on left click release. Also, the frame resets back to black on the right click. We will be using the `cv2.line` function for creating the curve. As the points will be very close to each other, the chain of line segments will look like a curve.
 - For this task, we can reuse `task_4.py` and make some changes to it. Create a python file named `task_4_2.py` and copy `task_4.py` code in it.
@@ -1139,7 +1139,7 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
 
 	![Untitled](./res/Untitled%204.gif)
 
-### **INTERACTING WITH TRACKBARS IN OPENCV**
+>### **INTERACTING WITH TRACKBARS IN OPENCV**
 
 - Trackbars in OpenCV allow us to change a variable value while the program is still running. This will be helpful when we need to change some variables and see their effects on the output in real time without closing and relaunching the program.
 - This process is similar to mouse events. To create a trackbar we will be using the `cv2.createTrackbar()` function which takes in a few arguments along with a `callback_function`
@@ -1247,7 +1247,7 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
 
 	![Untitled](./res/Untitled%206.gif)
 
-### **WARMUP_EXERCISE_4:**
+>### **WARMUP_EXERCISE_4:**
 
 - Create a simple program that can read an image, and crop a part of it by mouse click and drag (just like we did for drawing the rectangle), and on mouse release, it should save the cropped image in the current working directory.
 
@@ -1261,7 +1261,7 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
 
 **Objective: In this section, you will learn how to select and mask a color, find contours around the masked color, and then create a bounding box around it for tracking. You will also learn how to detect and track anything using a template image of an interesting object.**
 
-### **UNDERSTANDING HSV COLORSPACE**
+>### **UNDERSTANDING HSV COLORSPACE**
 
 - Let’s start by understanding the HSV color space. HSV stands for Hue, Saturation, and Value.
 - HSV color space is different from RGB, where all the variables are responsible for a particular color combination, its darkness, etc. In HSV, color is represented by Hue value (0-180), saturation (0-255) varies from being white to full color, and value (0-255) varies from being dark to full color.
@@ -1272,7 +1272,7 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
 
 - Hence isolating a color becomes easy in HSV color space than the RGB.
 
-### **MASKING COLOR**
+>### **MASKING COLOR**
 
 - Create a python file `task_5.py` inside a folder named “task_5”.
 - Create trackbars for; hue_low, hue_high, sat_low, sat_high, val_low, and val_high. These values will be useful for creating a `lower_bound` and `upper_bound` to isolate a color range. this isolation is achieved by `inRange` function that takes in HSV image, `lower_bound`, and `upper_bound` and returns a mask.
@@ -1370,7 +1370,7 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
 
 	![Untitled](./res/Untitled%208.gif)
 
-### **FINDING CONTOURS AND BOUNDING BOX:**
+>### **FINDING CONTOURS AND BOUNDING BOX:**
 
 - Since we now have the color bound for masking the blue color, we can now apply it on a video to mask the blue ball, find the contours around it, and then the bounding box to track the blue ball.
 - `findContours` function is used to get contours from a binary image. A binary image only contains two values 0 for black and 1 for white.
@@ -1431,7 +1431,7 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
 
 	![Untitled](./res/Untitled%209.gif)
 
-### **WARMUP_EXERCISE_5:**
+>### **WARMUP_EXERCISE_5:**
 
 - Write a program that removes the background (Green Screen) from the webcam feed and replace the background with other images, just like we have on zoom calls.
 - Try putting a solid colored canvas behind you so that the color detection and masking become easy. (OR try with the given sample video)
@@ -1448,7 +1448,7 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
 
 **Objective: In this section, you will learn to transform and manipulate the frames and hence the video. You will be performing, resizing, rotating, finding edges, finding and drawing contours, smoothening and perspective warping.**
 
-### **RESIZE:**
+>### **RESIZE:**
 
 - Create a python file `task_6.py` inside a folder task_6.
 - Reuse the **“READING IMAGE FILE”** code from previous section to read an image and display it.
@@ -1490,7 +1490,7 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
     
     ![Untitled](./res/Untitled%2026.png)
     
-### **ROTATE:**
+>### **ROTATE:**
 
 - To rotate an image use `rotate` function:
     
@@ -1569,7 +1569,7 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
     
     ![Untitled](./res/Untitled%2028.png)
 
-### **EDGE DETECTION:**
+>### **EDGE DETECTION:**
 
 - To detect the edges a function called `Canny` is used.
     
@@ -1608,7 +1608,7 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
     
     ![Untitled](./res/Untitled%2029.png)
     
-### **FINDING AND DRAWING CONTOURS:**
+>### **FINDING AND DRAWING CONTOURS:**
 
 - In order to find contours, we need a binary image, like the output of a canny edge detection. Since we already have it from the previous example we will be using `findContours` function on it that returns a group of contour points.
 - After finding the contour points we can draw them on the original image and display them.
@@ -1661,7 +1661,7 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
     
     ![Untitled](./res/Untitled%2030.png)
     
-### **SMOOTHENING:**
+>### **SMOOTHENING:**
 
 - There are different methods of smoothening images in OpenCV. We will try out `medianBlur` and `GaussianBlur` in this task. For more details on smoothening refer: **[Smoothing Images](https://docs.opencv.org/4.x/d4/d13/tutorial_py_filtering.html)**
     
@@ -1712,7 +1712,7 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
     
     ![Untitled](./res/Untitled%2031.png)
     
-### **PERSPECTIVE WARPING:**
+>### **PERSPECTIVE WARPING:**
 
 - In order to perform perspective warping we need 4 points from the original image that we can stretch and convert to a top view. Therefore first, create a python file `task_6_2.py` that prints out the points whenever we left-click on the image. In this way, we can extract the 4 corner points for the warped image from the original image easily.
     
@@ -1817,7 +1817,7 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
     
     ![Untitled](./res/Untitled%2013.gif)
     
-### **WARMUP_EXERCISE_6:**
+>### **WARMUP_EXERCISE_6:**
 
 - Create a very simple photo editor using track bars and tools covered in this section to achieve the following:
     - Filters, zooming, rotating, blurring, sketching effect (edge detection), and finally cropping and saving the cropped part of the image.
@@ -1833,7 +1833,7 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
 
 **Follow the guided steps in order to finish this build task. Most of the OpenCV tools required to execute these tasks have already been covered in the tutorial above. Hence here we will not be providing the example codes. These build tasks will test your understanding of the concepts and tools from the tutorial.**
 
-### I. Posterization (Cartoonization) of portraits:
+>### I. Posterization (Cartoonization) of portraits:
 
 **PROBLEM STATEMENT:**
 
@@ -1915,7 +1915,7 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
     ## Code for displaying "Original Vs Posterized Image"
     ```
     
-### II. Finding Heart Rate (Pulse):
+>### II. Finding Heart Rate (Pulse):
 
 **PROBLEM STATEMENT:**
 
@@ -1978,7 +1978,7 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
     # Code for extracting the pulse rate
     ```
     
-### III. Bounce Count:
+>### III. Bounce Count:
 
 **PROBLEM STATEMENT:**
 
@@ -2122,4 +2122,4 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
     
     ![Untitled](./res/Untitled%2047.png)
     
-### End of Build Series!
+>### End of Build Series!
