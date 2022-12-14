@@ -120,7 +120,7 @@ I. [Posterization (Cartoonization) of portraits](https://github.com/k-m-irfan/CV
 
 - Guided steps
 
-II. [Pulse Count](https://github.com/k-m-irfan/CV_Builder_Series#ii-pulse-count)
+II. [Finding Heart Rate (Pulse)](https://github.com/k-m-irfan/CV_Builder_Series#ii-pulse-count)
 
 - Problem statement
 
@@ -1892,7 +1892,7 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
     ```
     
 
-### II. Pulse Count:
+### II. Finding Heart Rate (Pulse):
 
 **PROBLEM STATEMENT:**
 
