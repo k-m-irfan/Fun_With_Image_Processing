@@ -1268,8 +1268,6 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
 
 	![hsv.png](./res/hsv.png)
 
-	![Untitled](./res/Untitled%2025.png)
-
 - Hence isolating a color becomes easy in HSV color space than the RGB.
 
 >### **MASKING COLOR**
