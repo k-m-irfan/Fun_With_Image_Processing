@@ -1983,7 +1983,7 @@ III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-co
 
 **PROBLEM STATEMENT:**
 
-- A video has been provided for this task and can be downloaded from here **[(bounce)](https://github.com/k-m-irfan/CV_Builder_Series/blob/main/capstone_build_tasks/bounce/Input.mov)** in which a ball is dropped randomly on a 2x2 grid.
+- A video has been provided for this task and can be downloaded from here **[(bounce)](https://github.com/k-m-irfan/CV_Builder_Series/blob/main/capstone_build_projects/bounce/Input.mov)** in which a ball is dropped randomly on a 2x2 grid.
 - Your task is to track the ball and detect when it touches the ground and, to find out when and in which region it bounced and also the total number of times it bounced from the ground.
 - The program should draw the boundaries around the 4 quadrants, detect and track the ball, and print out the information as given below.
     
