@@ -1,4 +1,4 @@
-# Computer Vision Builder Series
+# Fun With Image Processing
 
 **Requirements: A Linux (Ubuntu) or Windows Machine with a webcam.**
 
