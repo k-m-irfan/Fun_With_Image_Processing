@@ -32,8 +32,7 @@ while True:
                     if True in match:
                         cv2.rectangle(frame,(x,y),(x+w,y+h),(0,255,0),2)
                         cv2.putText(frame,'Mr. Bean',(x,y),cv2.FONT_HERSHEY_COMPLEX,1,(255,0,0),2)
-        cv2.imshow('Webcam', frame)
-        
+        cv2.imshow('Webcam', frame)        
 
     # Waits for 1ms and check for the pressed key
     if cv2.waitKey(1) & 0xff == ord('q'): # press q to quit the camera (get out of loop)
