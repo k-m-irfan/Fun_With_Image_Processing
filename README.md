@@ -18,126 +18,126 @@
 
 # Contents
 
-[**Pre-requisite.**](https://github.com/k-m-irfan/CV_Builder_Series#pre-requisite)
+[**Pre-requisite.**](#pre-requisite)
 
 1. Shell
 2. Python-Pip
 3. Git
 
-[**Core Computer Vision Learning Track:**](https://github.com/k-m-irfan/CV_Builder_Series#core-computer-vision-learning-track)
+[**Core Computer Vision Learning Track:**](#core-computer-vision-learning-track)
 
-1. [Introduction](https://github.com/k-m-irfan/CV_Builder_Series#1-introduction)
-2. [Reading - High-level overview of Video Encoding and ffmpeg](https://github.com/k-m-irfan/CV_Builder_Series#2-reading---high-level-overview-of-video-encoding-and-ffmpeg)
+1. [Introduction](#1-introduction)
+2. [Reading - High-level overview of Video Encoding and ffmpeg](#2-reading---high-level-overview-of-video-encoding-and-ffmpeg)
 
 	- Video Encoding - Compression and Resolutions
 
 	- Making Video Intuitive: An Explainer
 
-3. [Setting up Python, OpenCV, and Visual Studio Code](https://github.com/k-m-irfan/CV_Builder_Series#3-setting-up-python-opencv-and-visual-studio-code)
+3. [Setting up Python, OpenCV, and Visual Studio Code](#3-setting-up-python-opencv-and-visual-studio-code)
 
-	- [Installing Python](https://github.com/k-m-irfan/CV_Builder_Series#installing-python)
-
-		- Windows
-
-		- Linux (Ubuntu)
-
-	- [Installing OpenCV](https://github.com/k-m-irfan/CV_Builder_Series#installing-opencv)
-
-	- [Installing and setting up Visual Studio Code](https://github.com/k-m-irfan/CV_Builder_Series#installing-and-setting-up-visual-studio-code)
+	- [Installing Python](#installing-python)
 
 		- Windows
 
 		- Linux (Ubuntu)
 
-4. [Reading and saving image files using OpenCV](https://github.com/k-m-irfan/CV_Builder_Series#4-reading-and-saving-image-files-using-opencv)
+	- [Installing OpenCV](#installing-opencv)
 
-	- [Reading image files](https://github.com/k-m-irfan/CV_Builder_Series#reading-image-files)
+	- [Installing and setting up Visual Studio Code](#installing-and-setting-up-visual-studio-code)
 
-	- [Changing colorspace](https://github.com/k-m-irfan/CV_Builder_Series#changing-colorspace)
+		- Windows
 
-	- [Saving/writing image files](https://github.com/k-m-irfan/CV_Builder_Series#savingwriting-image-file)
+		- Linux (Ubuntu)
 
-	- [Warmup_Exercise_1](https://github.com/k-m-irfan/CV_Builder_Series#warmup_exercise_1)
+4. [Reading and saving image files using OpenCV](#4-reading-and-saving-image-files-using-opencv)
 
-5. [Reading and saving the video feed](https://github.com/k-m-irfan/CV_Builder_Series#5-reading-and-saving-the-video-feed)
+	- [Reading image files](#reading-image-files)
 
-	- [Launching the camera](https://github.com/k-m-irfan/CV_Builder_Series#launching-the-camera)
+	- [Changing colorspace](#changing-colorspace)
 
-	- [Getting video properties](https://github.com/k-m-irfan/CV_Builder_Series#getting-video-properties)
+	- [Saving/writing image files](#savingwriting-image-file)
 
-	- [Changing video properties](https://github.com/k-m-irfan/CV_Builder_Series#changing-video-properties)
+	- [Warmup_Exercise_1](#warmup_exercise_1)
 
-	- [Accessing and manipulating pixels](https://github.com/k-m-irfan/CV_Builder_Series#accessing-and-manipulating-pixels)
+5. [Reading and saving the video feed](#5-reading-and-saving-the-video-feed)
 
-	- [Saving the video](https://github.com/k-m-irfan/CV_Builder_Series#saving-the-video)
+	- [Launching the camera](#launching-the-camera)
 
-	- [Warmup_Exercise_2](https://github.com/k-m-irfan/CV_Builder_Series#warmup_exercise_2)
+	- [Getting video properties](#getting-video-properties)
 
-6. [Drawing Functions](https://github.com/k-m-irfan/CV_Builder_Series#6-drawing-functions)
+	- [Changing video properties](#changing-video-properties)
 
-	- [Line, Arrowed Line, Polylines, Rectangle, Circle, Put Text](https://github.com/k-m-irfan/CV_Builder_Series#6-drawing-functions)
+	- [Accessing and manipulating pixels](#accessing-and-manipulating-pixels)
 
-	- [Warmup_Exercise_3](https://github.com/k-m-irfan/CV_Builder_Series#warmup_exercise_3)
+	- [Saving the video](#saving-the-video)
 
-7. [Interacting with the video](https://github.com/k-m-irfan/CV_Builder_Series#7-interacting-with-the-video)
+	- [Warmup_Exercise_2](#warmup_exercise_2)
 
-	- [Mouse Events](https://github.com/k-m-irfan/CV_Builder_Series#mouse-events)
+6. [Drawing Functions](#6-drawing-functions)
 
-	- [Draw a rectangle with a mouse](https://github.com/k-m-irfan/CV_Builder_Series#draw-a-rectangle-with-mouse)
+	- [Line, Arrowed Line, Polylines, Rectangle, Circle, Put Text](#6-drawing-functions)
 
-	- [Draw a curve using a mouse](https://github.com/k-m-irfan/CV_Builder_Series#draw-a-curve-using-a-mouse)
+	- [Warmup_Exercise_3](#warmup_exercise_3)
 
-	- [Interacting with trackbars in OpenCV](https://github.com/k-m-irfan/CV_Builder_Series#interacting-with-trackbars-in-opencv)
+7. [Interacting with the video](#7-interacting-with-the-video)
 
-	- [Warmup_Exercise_4](https://github.com/k-m-irfan/CV_Builder_Series#warmup_exercise_4)
+	- [Mouse Events](#mouse-events)
 
-8. [Object detection and tracking with color mask](https://github.com/k-m-irfan/CV_Builder_Series#8-object-detection-and-tracking-with-a-color-mask)
+	- [Draw a rectangle with a mouse](#draw-a-rectangle-with-mouse)
 
-	- [Unerstanding HSV Colorspace](https://github.com/k-m-irfan/CV_Builder_Series#understanding-hsv-colorspace)
+	- [Draw a curve using a mouse](#draw-a-curve-using-a-mouse)
+
+	- [Interacting with trackbars in OpenCV](#interacting-with-trackbars-in-opencv)
+
+	- [Warmup_Exercise_4](#warmup_exercise_4)
+
+8. [Object detection and tracking with color mask](#8-object-detection-and-tracking-with-a-color-mask)
+
+	- [Unerstanding HSV Colorspace](#understanding-hsv-colorspace)
 	
-	- [Masking color](https://github.com/k-m-irfan/CV_Builder_Series#masking-color)
+	- [Masking color](#masking-color)
 
-	- [Finding contours and bounding box](https://github.com/k-m-irfan/CV_Builder_Series#finding-contours-and-bounding-box)
+	- [Finding contours and bounding box](#finding-contours-and-bounding-box)
 
-	- [Warmup_Exercise_5](https://github.com/k-m-irfan/CV_Builder_Series#warmup_exercise_5)
+	- [Warmup_Exercise_5](#warmup_exercise_5)
 
-9. [Frame manipulation and transformation](https://github.com/k-m-irfan/CV_Builder_Series#9-frame-manipulation-and-transformation)
+9. [Frame manipulation and transformation](#9-frame-manipulation-and-transformation)
 
-	- [Resize](https://github.com/k-m-irfan/CV_Builder_Series#resize)
+	- [Resize](#resize)
 
-	- [Rotate](https://github.com/k-m-irfan/CV_Builder_Series#rotate)
+	- [Rotate](#rotate)
 
-	- [Edge detection](https://github.com/k-m-irfan/CV_Builder_Series#edge-detection)
+	- [Edge detection](#edge-detection)
 
-	- [Finding and drawing contours](https://github.com/k-m-irfan/CV_Builder_Series#finding-and-drawing-contours)
+	- [Finding and drawing contours](#finding-and-drawing-contours)
 
-	- [Smoothening](https://github.com/k-m-irfan/CV_Builder_Series#smoothening)
+	- [Smoothening](#smoothening)
 
-	- [Perspective warping](https://github.com/k-m-irfan/CV_Builder_Series#perspective-warping)
+	- [Perspective warping](#perspective-warping)
 
-	- [Warmup_Exercise_6](https://github.com/k-m-irfan/CV_Builder_Series#warmup_exercise_6)
+	- [Warmup_Exercise_6](#warmup_exercise_6)
 
-[**Capstone Build Projects**](https://github.com/k-m-irfan/CV_Builder_Series#capstone-build-tasks)
+[**Capstone Build Projects**](#capstone-build-tasks)
 
-I. [Posterization (Cartoonization) of portraits](https://github.com/k-m-irfan/CV_Builder_Series#i-posterization-cartoonization-of-portraits)
-
-- Problem statement
-
-- Guided steps
-
-II. [Finding Heart Rate (Pulse)](https://github.com/k-m-irfan/CV_Builder_Series#ii-finding-heart-rate-pulse)
+I. [Posterization (Cartoonization) of portraits](#i-posterization-cartoonization-of-portraits)
 
 - Problem statement
 
 - Guided steps
 
-III. [Bounce Count](https://github.com/k-m-irfan/CV_Builder_Series#iii-bounce-count)
+II. [Finding Heart Rate (Pulse)](#ii-finding-heart-rate-pulse)
 
 - Problem statement
 
 - Guided steps
 
-[**Uploading projects to GitHub**](https://github.com/k-m-irfan/CV_Builder_Series#uploading-projects-to-github)
+III. [Bounce Count](#iii-bounce-count)
+
+- Problem statement
+
+- Guided steps
+
+[**Uploading projects to GitHub**](#uploading-projects-to-github)
 
 <br>
 
