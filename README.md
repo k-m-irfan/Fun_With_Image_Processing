@@ -117,7 +117,7 @@
 
 	- [Warmup_Exercise_6](#warmup_exercise_6)
 
-[**Capstone Build Projects**](#capstone-build-tasks)
+[**Capstone Build Projects**](#capstone-build-projects)
 
 I. [Posterization (Cartoonization) of portraits](#i-posterization-cartoonization-of-portraits)
 
