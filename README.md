@@ -1,6 +1,6 @@
 # Fun With Image Processing
 
-**Requirements: A Linux (Ubuntu) or Windows Machine with a webcam.**
+**Requirements: A Linux (Ubuntu) (Preferred) or Windows Machine with a webcam.**
 
 **Download the image and video files used for the sample codes from the course repository here: [Fun_With_Image_Processing](https://github.com/k-m-irfan/Fun_With_Image_Processing)**
 
@@ -781,7 +781,7 @@ III. [Bounce Count](#iii-bounce-count)
 	    output.write(frame)
 
 	    # Waits for 1ms and check for the pressed key
-		    if cv2.waitKey(1) & 0xff == ord('q'): # press q to quit the camera (get out of the loop)
+		if cv2.waitKey(1) & 0xff == ord('q'): # press q to quit the camera (get out of the loop)
 			break
 	cam.release() # close the camera
 	output.release() # close video writer
