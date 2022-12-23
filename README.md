@@ -2,7 +2,7 @@
 
 **Requirements: A Linux (Ubuntu) or Windows Machine with a webcam.**
 
-**Download the image and video files used for the sample codes from the course repository here: [Fun_With_Image_Processing](https://github.com/k-m-irfan/CV_Builder_Series)**
+**Download the image and video files used for the sample codes from the course repository here: [Fun_With_Image_Processing](https://github.com/k-m-irfan/Fun_With_Image_Processing)**
 
 ![Untitled](./res/Untitled.png)
 
