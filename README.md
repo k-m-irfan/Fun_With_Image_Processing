@@ -1827,6 +1827,186 @@ III. [Bounce Count](#iii-bounce-count)
 	**Expected Output:**
 
 	![Untitled](./res/Untitled%2014.gif)
+
+
+################################################
+
+# 10. Face Detection and Recognition:
+
+---
+
+**********************Objective: In this section you will learn how to detect a face, and recognize it. You will be using a template face which will be encoded and compared with the unknown faces in the camera or video feed.**********************
+
+### FACE DETECTION:
+
+- For this task you will be using the `FaceDetection()` function of Mediapipe. It is quick and easy to implement.
+- Before starting install Mediapipe using the command `pip install mediapipe` in your terminal. This should install latest version of Mediapipe.
+- Make a file `task_7.py` inside a folder task_7. Create a face detector object using the function `mp.solutions.face_detection.FaceDetection()`
+- You also need to get the video feed width and height using `cam.get()` function. Because after processing the frame the detector returns the location of face (x_min, width and y_min, height) which are normalized to 0 → 1 by the video width and height respectively.
+    
+    **************Syntax:**************
+    
+    `faces = mp.solutions.face_detection.FaceDetection()`
+    
+    `faceResults = faces.process(frameRGB)`
+    
+    - `frameRGB` > You have to convert the frame to RGB before processing for face detection.
+    - `faceResults` > Returns a list of location of faces. (`x_min`, `width` and `y_min`, `height`)
+        - `x_min` , `y_min` > top left corner of face bounding box.
+        - `width` , `height` > width and height of bounding box from top left corner.
+    
+    **************************Example Code:**************************
+    
+    ```python
+    # import required libraries here
+    import cv2
+    import mediapipe as mp
+    
+    # video capture object where 0 is the camera number for a usb camera (or webcam)
+    # cam = cv2.VideoCapture(0)
+    
+    # for video file, use this:
+    cam = cv2.VideoCapture("./task_7/mrBean.mp4")
+    # Frame width and height, will be useful later to find exact pixel locations from normalized locations of faces
+    width = cam.get(cv2.CAP_PROP_FRAME_WIDTH)
+    height = cam.get(cv2.CAP_PROP_FRAME_HEIGHT)
+    
+    # Creating a face detector object from Mediapipe solutions
+    faces = mp.solutions.face_detection.FaceDetection()
+    
+    while True:
+        _ , frame = cam.read() # reading one frame from the camera object
+        if _: # if frame received proceed
+            frameRGB = cv2.cvtColor(frame,cv2.COLOR_BGR2RGB) # Convert to RGB for processing
+            faceResults = faces.process(frameRGB) # this returns list of location for all the faces in the current frame
+            if faceResults.detections != None: # if detection is non empty or if atleast one face detected > proceed elsse skip
+                for face in faceResults.detections: # iterate through each face locations
+                    bBox = face.location_data.relative_bounding_box # Collect bounding boxes for each face
+                    # splitting into variables and converting to integer for drawing rectangle around detected faces
+                    x,y,w,h = int(bBox.xmin*width),int(bBox.ymin*height),int(bBox.width*width),int(bBox.height*height)
+                    cv2.rectangle(frame,(x,y),(x+w,y+h),(0,255,0),2)
+    
+            cv2.imshow('Webcam', frame)
+    
+        # Waits for 1ms and check for the pressed key
+        if cv2.waitKey(1) & 0xff == ord('q'): # press q to quit the camera (get out of loop)
+            break
+    cam.release() # close the camera
+    cv2.destroyAllWindows() # Close all the active windows
+    ```
+    
+    ********************************Expected Output:********************************
+    
+    ![Untitled](Section%2010%205148d573c65a4342b2a22378fbeb86ca/Untitled.gif)
+    
+
+### FACE RECOGNITION:
+
+- Now let’s build on the previous code to recognize Mr. Bean’s face on a video. For this task you need to install `face_recognition` library.
+- The face_recognition library has a dependency on cmake, hence you have to install cmke first.
+- Install them with `pip install cmake` and `pip install face_recognition`
+- Once you are ready with the library you can use the `face_encodings()` function to encode the template face in the beginning of the program.
+- Within the loop after getting the bounding box, crop the face from the frame and encode that cropped face.
+- You can compare the encoded template-face and the encoded unknown-face using the function `compare_faces()` and if it returns true, there is match. In this way you can recognize a person in a video or a photo.
+- You can also do this for multiple people by template encoding faces of different people, or multiple faces of same person for better recognition of a single person.
+    
+    **************Syntax:**************
+    
+    `faceEncoding = fr.face_encodings(face)`
+    
+    `match = fr.compare_faces(unknownEncoding,faceEncoding)`
+    
+    - `face` > input template face.
+    - `unknownEncoding` > encoded object of template face.
+    - `faceEncoding` > encoded object of detected unknown face in current frame.
+    - `match` > `True` if there is a match, else `False`.
+    
+    ****************Example:****************
+    
+    ```python
+    # import required libraries here
+    import cv2
+    import mediapipe as mp
+    import face_recognition as fr
+    
+    # video capture object where 0 is the camera number for a usb camera (or webcam)
+    # cam = cv2.VideoCapture(0)
+    
+    # for video file, use:
+    cam = cv2.VideoCapture("./task_7/mrBean2.mp4")
+    # Frame width and height, will be useful later to find exact pixel locations from normalized locations of faces
+    width = cam.get(cv2.CAP_PROP_FRAME_WIDTH)
+    height = cam.get(cv2.CAP_PROP_FRAME_HEIGHT)
+    faces = mp.solutions.face_detection.FaceDetection()
+    
+    # loading template face image
+    face = fr.load_image_file("./task_7/mrBean.png") # load a face
+    # Encoding input face
+    faceEncoding = fr.face_encodings(face)[0] # since it returns list of encoded faces, we are only providing
+                                              # one face in this example, and we are only interested im the
+                                              # first face. Hence, [0]th face taken here.
+    
+    while True:
+        _ , frame = cam.read() # reading one frame from the camera object
+        if _: # if frame received proceed
+            frameRGB = cv2.cvtColor(frame,cv2.COLOR_BGR2RGB) # convert to RGB for encoding
+            faceResults = faces.process(frameRGB) # this returns list of location for all the faces in the current frame
+            if faceResults.detections != None: # if detection is non empty or if atleast one face detected > proceed elsse skip
+                for face in faceResults.detections: # iterate through each face locations
+                    bBox = face.location_data.relative_bounding_box # Collect bounding boxes for each face
+                    # splitting into variables and converting to integer for drawing rectangle around detected faces
+                    x,y,w,h = int(bBox.xmin*width),int(bBox.ymin*height),int(bBox.width*width),int(bBox.height*height)
+                    face = frameRGB[y:y+h,x:x+w] # getting cropped face
+                    if (face.shape[0]*face.shape[1]) > 0: # to filter out false detection and empty dimentioned crops  
+                        encoding = fr.face_encodings(face) # encoding unknown face to compare with the template
+                        match = fr.compare_faces(encoding,faceEncoding)
+                        if True in match: # Draw rectangle and display name if there is a match
+                            cv2.rectangle(frame,(x,y),(x+w,y+h),(0,255,0),2)
+                            cv2.putText(frame,'Mr. Bean',(x,y),cv2.FONT_HERSHEY_COMPLEX,1,(255,0,0),2)
+            cv2.imshow('Webcam', frame)        
+    
+        # Waits for 1ms and check for the pressed key
+        if cv2.waitKey(1) & 0xff == ord('q'): # press q to quit the camera (get out of loop)
+            break
+    cam.release() # close the camera
+    cv2.destroyAllWindows() # Close all the active windows
+    ```
+    
+    ********************************Expected Output:********************************
+    
+    ![Untitled](Section%2010%205148d573c65a4342b2a22378fbeb86ca/Untitled%201.gif)
+    
+    - Here you can see that sometimes it cannot recognize the face. This is because we are only using one face for template. More samples can be used for better recognition.
+    
+
+### ****WARMUP_EXERCISE_7:****
+
+- Build a basic attendance system using template images of your friends, it should be able to:
+    - Detect faces from a video/camera feed and draw a box around the face.
+    - Recognize the person by comparing the cropped face and template faces and display their name next to the bounding box.
+    - Update the attendance, name, date and time in a text or csv file if there is a match.
+    
+    ********************************Expected Output:********************************
+    
+    ```bash
+    Name, Attendance, Date, Time
+    Bean, Present, 2022-12-24, 08:12:55
+    Ben, Absent, -, -
+    Jacky, Absent, -, -
+    Robert, Present, 2022-12-24, 08:13:19
+    Tom, Present, 2022-12-24, 08:14:35
+    ```
+    
+
+# WHAT NEXT?
+
+- You can read more and play around with OpenCV and Mediapipe to build cool projects: You can refer these resources below to explore and experiment more in this area.
+    - Checkout this website where you can find bunch of cool projects and example codes to play with: [LearnOpenCV](https://learnopencv.com/)
+    - Play around and experiment with the different solutions that Mediapipe offers, like detecting face, hands, pose landmarks, pose and hair segmentation etc. You can find example codes for most of the solutions they provide: [GitHub-Mediapipe](https://google.github.io/mediapipe/#:~:text=MediaPipe%20offers%20cross%2Dplatform%2C%20customizable,desktop%2Fcloud%2C%20web%20and%20IoT)
+    - Also for a very detailed YouTube tutorial by Paul McWhorter, checkout this playlist: [AI For Everyone](https://www.youtube.com/watch?v=gD_HWj_hvbo&list=PLGs0VKk2DiYyXlbJVaE8y1qr24YldYNDm)
+
+
+#############################################
 	
 <br>
 
