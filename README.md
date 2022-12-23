@@ -1897,7 +1897,7 @@ III. [Bounce Count](#iii-bounce-count)
     
     ********************************Expected Output:********************************
     
-    ![Untitled](Section%2010%205148d573c65a4342b2a22378fbeb86ca/Untitled.gif)
+    ![Untitled](./res/fd.gif)
     
 
 ### FACE RECOGNITION:
@@ -1974,7 +1974,7 @@ III. [Bounce Count](#iii-bounce-count)
     
     ********************************Expected Output:********************************
     
-    ![Untitled](Section%2010%205148d573c65a4342b2a22378fbeb86ca/Untitled%201.gif)
+    ![Untitled](./res/fr.gif)
     
     - Here you can see that sometimes it cannot recognize the face. This is because we are only using one face for template. More samples can be used for better recognition.
     
