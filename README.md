@@ -497,30 +497,30 @@ III. [Bounce Count](#iii-bounce-count)
 
 	**Example Code:**
 
-	```python
-	# import required libraries here
-	import cv2
-
-	# video capture object where 0 is the camera number for a usb camera (or webcam)
-	# if 0 doesn't work, you might need to change the camera number to get the right camera you want to access
-	cam = cv2.VideoCapture(0)
-
-	# # for video file, use:
-	# cam = cv2.VideoCapture('video_file_path')
-
-	# # for IP camera, use:
-	# cam = cv2.VideoCapture('IP_Address')
-
-	while True:
-	    _ , frame = cam.read() # reading one frame from the camera object
-	    cv2.imshow('Webcam', frame) # display the current frame in a window named 'Webcam'
-
-	    # Waits for 1ms and check for the pressed key
-	    if cv2.waitKey(1) & 0xff == ord('q'): # press q to quit the camera (get out of loop)
-		break
-	cam.release() # close the camera
-	cv2.destroyAllWindows() # Close all the active windows
-	```
+    ```python
+    # import required libraries here
+    import cv2
+    
+    # video capture object where 0 is the camera number for a usb camera (or webcam)
+    # if 0 doesn't work, you might need to change the camera number to get the right camera you want to access
+    cam = cv2.VideoCapture(0)
+    
+    # # for video file, use:
+    # cam = cv2.VideoCapture('video_file_path')
+    
+    # # for IP camera, use:
+    # cam = cv2.VideoCapture('IP_Address')
+    
+    while True:
+        _ , frame = cam.read() # reading one frame from the camera object
+        cv2.imshow('Webcam', frame) # display the current frame in a window named 'Webcam'
+    
+        # Waits for 1ms and check for the pressed key
+        if cv2.waitKey(1) & 0xff == ord('q'): # press q to quit the camera (get out of loop)
+	    break
+    cam.release() # close the camera
+    cv2.destroyAllWindows() # Close all the active windows
+    ```
 
 	**Expected Output:**
 
@@ -541,35 +541,35 @@ III. [Bounce Count](#iii-bounce-count)
 
 	**Example Code:**
 
-	```python
-	# import required libraries here
-	import cv2
-
-	# video capture object where 0 is the camera number for a usb camera (or webcam)
-	# if 0 doesn't work, you might need to change the camera number to get the right camera you want to access
-	cam = cv2.VideoCapture(0)
-
-	# Getting camera feed width and height
-	width = cam.get(cv2.CAP_PROP_FRAME_WIDTH)
-	height = cam.get(cv2.CAP_PROP_FRAME_HEIGHT)
-	fps = cam.get(cv2.CAP_PROP_FPS)
-
-	# # for video file, use:
-	# cam = cv2.VideoCapture('video_file_path')
-
-	# # for IP camera, use:
-	# cam = cv2.VideoCapture('IP_Address')
-
-	while True:
-	    i, frame = cam.read() # reading one frame from the camera object
-	    cv2.imshow('Webcam', frame) # display the current frame in a window named 'Webcam'
-	    print('resolution:',width, 'x', height, '| frames per second:', fps)
-	    # Waits for 1ms and check for the pressed key
-	    if cv2.waitKey(1) & 0xff == ord('q'): # press q to quit the camera (get out of loop)
-		break
-	cam.release() # close the camera
-	cv2.destroyAllWindows() # Close all the active windows
-	```
+    ```python
+    # import required libraries here
+    import cv2
+    
+    # video capture object where 0 is the camera number for a usb camera (or webcam)
+    # if 0 doesn't work, you might need to change the camera number to get the right camera you want to access
+    cam = cv2.VideoCapture(0)
+    
+    # Getting camera feed width and height
+    width = cam.get(cv2.CAP_PROP_FRAME_WIDTH)
+    height = cam.get(cv2.CAP_PROP_FRAME_HEIGHT)
+    fps = cam.get(cv2.CAP_PROP_FPS)
+    
+    # # for video file, use:
+    # cam = cv2.VideoCapture('video_file_path')
+    
+    # # for IP camera, use:
+    # cam = cv2.VideoCapture('IP_Address')
+    
+    while True:
+        i, frame = cam.read() # reading one frame from the camera object
+        cv2.imshow('Webcam', frame) # display the current frame in a window named 'Webcam'
+        print('resolution:',width, 'x', height, '| frames per second:', fps)
+        # Waits for 1ms and check for the pressed key
+        if cv2.waitKey(1) & 0xff == ord('q'): # press q to quit the camera (get out of loop)
+	    break
+    cam.release() # close the camera
+    cv2.destroyAllWindows() # Close all the active windows
+    ```
 
 	**Expected Output:**
 
@@ -597,40 +597,40 @@ III. [Bounce Count](#iii-bounce-count)
 
 	**Example Code:**
 
-	```python
-	# import required libraries here
-	import cv2
-
-	# video capture object where 0 is the camera number for a usb camera (or webcam)
-	# if 0 doesn't work, you might need to change the camera number to get the right camera you want to access
-	cam = cv2.VideoCapture(0)
-
-	# Changing video capture property 
-	cam.set(cv2.CAP_PROP_FRAME_WIDTH,1280)
-	cam.set(cv2.CAP_PROP_FRAME_HEIGHT,720)
-	cam.set(cv2.CAP_PROP_FPS,15)
-
-	# Getting camera feed width and height after modifying them
-	width = cam.get(cv2.CAP_PROP_FRAME_WIDTH)
-	height = cam.get(cv2.CAP_PROP_FRAME_HEIGHT)
-	fps = cam.get(cv2.CAP_PROP_FPS)
-
-	# # for video file, use:
-	# cam = cv2.VideoCapture('video_file_path')
-
-	# # for IP camera, use:
-	# cam = cv2.VideoCapture('IP_Address')
-
-	while True:
-	    i, frame = cam.read() # reading one frame from the camera object
-	    cv2.imshow('Webcam', frame) # display the current frame in a window named 'Webcam'
-	    print('resolution:',width, 'x', height, '| frames per second:', fps)
-	    # Waits for 1ms and check for the pressed key
-	    if cv2.waitKey(1) & 0xff == ord('q'): # press q to quit the camera (get out of the loop)
-		break
-	cam.release() # close the camera
-	cv2.destroyAllWindows() # Close all the active windows
-	```
+    ```python
+    # import required libraries here
+    import cv2
+    
+    # video capture object where 0 is the camera number for a usb camera (or webcam)
+    # if 0 doesn't work, you might need to change the camera number to get the right camera you want to access
+    cam = cv2.VideoCapture(0)
+    
+    # Changing video capture property 
+    cam.set(cv2.CAP_PROP_FRAME_WIDTH,1280)
+    cam.set(cv2.CAP_PROP_FRAME_HEIGHT,720)
+    cam.set(cv2.CAP_PROP_FPS,15)
+    
+    # Getting camera feed width and height after modifying them
+    width = cam.get(cv2.CAP_PROP_FRAME_WIDTH)
+    height = cam.get(cv2.CAP_PROP_FRAME_HEIGHT)
+    fps = cam.get(cv2.CAP_PROP_FPS)
+    
+    # # for video file, use:
+    # cam = cv2.VideoCapture('video_file_path')
+    
+    # # for IP camera, use:
+    # cam = cv2.VideoCapture('IP_Address')
+    
+    while True:
+        i, frame = cam.read() # reading one frame from the camera object
+        cv2.imshow('Webcam', frame) # display the current frame in a window named 'Webcam'
+        print('resolution:',width, 'x', height, '| frames per second:', fps)
+        # Waits for 1ms and check for the pressed key
+        if cv2.waitKey(1) & 0xff == ord('q'): # press q to quit the camera (get out of the loop)
+	    break
+    cam.release() # close the camera
+    cv2.destroyAllWindows() # Close all the active windows
+    ```
 
 	**Expected Output:**
 
@@ -665,19 +665,19 @@ III. [Bounce Count](#iii-bounce-count)
 
 	**Example Code Snippet:**
 
-	```python
-	new_image = image[:10,:10]
-	B = new_image[:,:,0]
-	G = new_image[:,:,1]
-	R = new_image[:,:,2]
-
-	print('Blue Channel')
-	print(B)
-	print('Green Channel')
-	print(G)
-	print('Red Channel')
-	print(R)
-	```
+    ```python
+    new_image = image[:10,:10]
+    B = new_image[:,:,0]
+    G = new_image[:,:,1]
+    R = new_image[:,:,2]
+    
+    print('Blue Channel')
+    print(B)
+    print('Green Channel')
+    print(G)
+    print('Red Channel')
+    print(R)
+    ```
 
 	**Expected Output:**
 
@@ -758,41 +758,41 @@ III. [Bounce Count](#iii-bounce-count)
 
 - Try out the sample code below to save a video using OpenCV:
 
-	**Example Code:**
+    **Example Code:**
 
-	```python
-	# import required libraries here
-	import cv2
+    ```python
+    # import required libraries here
+    import cv2
 
-	# video capture object where 0 is the camera number for a usb camera (or webcam)
-	# if 0 doesn't work, you might need to change the camera number to get the right camera you want to access
-	cam = cv2.VideoCapture(0)
+    # video capture object where 0 is the camera number for a usb camera (or webcam)
+    # if 0 doesn't work, you might need to change the camera number to get the right camera you want to access
+    cam = cv2.VideoCapture(0)
 
-	# # for video file, use:
-	# cam = cv2.VideoCapture('video_file_path')
+    # # for video file, use:
+    # cam = cv2.VideoCapture('video_file_path')
 
-	# # for IP camera, use:
-	# cam = cv2.VideoCapture('IP_Address')
+    # # for IP camera, use:
+    # cam = cv2.VideoCapture('IP_Address')
 
-	width = int(cam.get(cv2.CAP_PROP_FRAME_WIDTH)) # convert to integer
-	height = int(cam.get(cv2.CAP_PROP_FRAME_HEIGHT))
-	fps = cam.get(cv2.CAP_PROP_FPS)
+    width = int(cam.get(cv2.CAP_PROP_FRAME_WIDTH)) # convert to integer
+    height = int(cam.get(cv2.CAP_PROP_FRAME_HEIGHT))
+    fps = cam.get(cv2.CAP_PROP_FPS)
 
-	output_file = './task_2/recording.MP4' # file location + name
-	output = cv2.VideoWriter(output_file, cv2.VideoWriter_fourcc(*'MJPG'), fps, (width, height))
+    output_file = './task_2/recording.MP4' # file location + name
+    output = cv2.VideoWriter(output_file, cv2.VideoWriter_fourcc(*'MJPG'), fps, (width, height))
 
-	while True:
-	    _ , frame = cam.read() # reading one frame from the camera object
-	    cv2.imshow('Webcam', frame) # display the current frame in a window named 'Webcam'
-	    output.write(frame)
-
-	    # Waits for 1ms and check for the pressed key
-		if cv2.waitKey(1) & 0xff == ord('q'): # press q to quit the camera (get out of the loop)
-			break
-	cam.release() # close the camera
-	output.release() # close video writer
-	cv2.destroyAllWindows() # Close all the active windows
-	```
+    while True:
+        _ , frame = cam.read() # reading one frame from the camera object
+        cv2.imshow('Webcam', frame) # display the current frame in a window named 'Webcam'
+        output.write(frame)
+    
+        # Waits for 1ms and check for the pressed key
+	    if cv2.waitKey(1) & 0xff == ord('q'): # press q to quit the camera (get out of the loop)
+		    break
+    cam.release() # close the camera
+    output.release() # close video writer
+    cv2.destroyAllWindows() # Close all the active windows
+    ```
 
 >### **WARMUP_EXERCISE_2:**
 
