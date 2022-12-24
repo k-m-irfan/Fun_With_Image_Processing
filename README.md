@@ -116,6 +116,12 @@
 	- [Perspective warping](#perspective-warping)
 
 	- [Warmup_Exercise_6](#warmup_exercise_6)
+	
+10. [Face detection and recognition](#10-face-detection-and-recognition)
+
+	- [Face Detection](#face-detection)
+	
+	- [Face Recognition](#face-recognition)
 
 [**Capstone Build Projects**](#capstone-build-projects)
 
@@ -1828,23 +1834,20 @@ III. [Bounce Count](#iii-bounce-count)
 
 	![Untitled](./res/Untitled%2014.gif)
 
+<br>
 
-################################################
+## 10. Face Detection and Recognition:
 
-# 10. Face Detection and Recognition:
+**Objective: In this section you will learn how to detect a face, and recognize it. You will be using a template face which will be encoded and compared with the unknown faces in the camera or video feed.**
 
----
-
-**********************Objective: In this section you will learn how to detect a face, and recognize it. You will be using a template face which will be encoded and compared with the unknown faces in the camera or video feed.**********************
-
-### FACE DETECTION:
+>### **FACE DETECTION:**
 
 - For this task you will be using the `FaceDetection()` function of Mediapipe. It is quick and easy to implement.
 - Before starting install Mediapipe using the command `pip install mediapipe` in your terminal. This should install latest version of Mediapipe.
 - Make a file `task_7.py` inside a folder task_7. Create a face detector object using the function `mp.solutions.face_detection.FaceDetection()`
 - You also need to get the video feed width and height using `cam.get()` function. Because after processing the frame the detector returns the location of face (x_min, width and y_min, height) which are normalized to 0 → 1 by the video width and height respectively.
     
-    **************Syntax:**************
+    **Syntax:**
     
     `faces = mp.solutions.face_detection.FaceDetection()`
     
@@ -1855,7 +1858,7 @@ III. [Bounce Count](#iii-bounce-count)
         - `x_min` , `y_min` > top left corner of face bounding box.
         - `width` , `height` > width and height of bounding box from top left corner.
     
-    **************************Example Code:**************************
+    **Example Code:**
     
     ```python
     # import required libraries here
@@ -1895,22 +1898,21 @@ III. [Bounce Count](#iii-bounce-count)
     cv2.destroyAllWindows() # Close all the active windows
     ```
     
-    ********************************Expected Output:********************************
+    **Expected Output:**
     
     ![Untitled](./res/fd.gif)
-    
 
-### FACE RECOGNITION:
+>### **FACE RECOGNITION:**
 
 - Now let’s build on the previous code to recognize Mr. Bean’s face on a video. For this task you need to install `face_recognition` library.
-- The face_recognition library has a dependency on cmake, hence you have to install cmke first.
+- The `face_recognition` library has a dependency on `cmake`, hence you have to install cmke first.
 - Install them with `pip install cmake` and `pip install face_recognition`
 - Once you are ready with the library you can use the `face_encodings()` function to encode the template face in the beginning of the program.
 - Within the loop after getting the bounding box, crop the face from the frame and encode that cropped face.
 - You can compare the encoded template-face and the encoded unknown-face using the function `compare_faces()` and if it returns true, there is match. In this way you can recognize a person in a video or a photo.
 - You can also do this for multiple people by template encoding faces of different people, or multiple faces of same person for better recognition of a single person.
     
-    **************Syntax:**************
+    **Syntax:**
     
     `faceEncoding = fr.face_encodings(face)`
     
@@ -1921,7 +1923,7 @@ III. [Bounce Count](#iii-bounce-count)
     - `faceEncoding` > encoded object of detected unknown face in current frame.
     - `match` > `True` if there is a match, else `False`.
     
-    ****************Example:****************
+    **Example:**
     
     ```python
     # import required libraries here
@@ -1972,21 +1974,20 @@ III. [Bounce Count](#iii-bounce-count)
     cv2.destroyAllWindows() # Close all the active windows
     ```
     
-    ********************************Expected Output:********************************
+    **Expected Output:**
     
     ![Untitled](./res/fr.gif)
     
     - Here you can see that sometimes it cannot recognize the face. This is because we are only using one face for template. More samples can be used for better recognition.
     
-
-### ****WARMUP_EXERCISE_7:****
+>### **WARMUP_EXERCISE_7:**
 
 - Build a basic attendance system using template images of your friends, it should be able to:
     - Detect faces from a video/camera feed and draw a box around the face.
     - Recognize the person by comparing the cropped face and template faces and display their name next to the bounding box.
     - Update the attendance, name, date and time in a text or csv file if there is a match.
     
-    ********************************Expected Output:********************************
+    **Expected Output:**
     
     ```bash
     Name, Attendance, Date, Time
@@ -1996,17 +1997,6 @@ III. [Bounce Count](#iii-bounce-count)
     Robert, Present, 2022-12-24, 08:13:19
     Tom, Present, 2022-12-24, 08:14:35
     ```
-    
-
-# WHAT NEXT?
-
-- You can read more and play around with OpenCV and Mediapipe to build cool projects: You can refer these resources below to explore and experiment more in this area.
-    - Checkout this website where you can find bunch of cool projects and example codes to play with: [LearnOpenCV](https://learnopencv.com/)
-    - Play around and experiment with the different solutions that Mediapipe offers, like detecting face, hands, pose landmarks, pose and hair segmentation etc. You can find example codes for most of the solutions they provide: [GitHub-Mediapipe](https://google.github.io/mediapipe/#:~:text=MediaPipe%20offers%20cross%2Dplatform%2C%20customizable,desktop%2Fcloud%2C%20web%20and%20IoT)
-    - Also for a very detailed YouTube tutorial by Paul McWhorter, checkout this playlist: [AI For Everyone](https://www.youtube.com/watch?v=gD_HWj_hvbo&list=PLGs0VKk2DiYyXlbJVaE8y1qr24YldYNDm)
-
-
-#############################################
 	
 <br>
 
@@ -2241,7 +2231,7 @@ III. [Bounce Count](#iii-bounce-count)
     
     #----------------- END LOOP ----------------
     ```
-    
+<br>
 
 # Uploading projects to GitHub:
 
@@ -2302,5 +2292,14 @@ III. [Bounce Count](#iii-bounce-count)
 - Finally, if the `push` was successful, reload or navigate to the “CV_Builder_Series” repo, and you can see all your files have been uploaded to GitHub.
     
     ![Untitled](./res/Untitled%2047.png)
+    
+<br>
+
+# WHAT NEXT?
+
+- You can read more and play around with OpenCV and Mediapipe to build cool projects: You can refer these resources below to explore and experiment more in this area.
+    - Checkout this website where you can find bunch of cool projects and example codes to play with: [LearnOpenCV](https://learnopencv.com/)
+    - Play around and experiment with the different solutions that Mediapipe offers, like detecting face, hands, pose landmarks, pose and hair segmentation etc. You can find example codes for most of the solutions they provide: [GitHub-Mediapipe](https://google.github.io/mediapipe/#:~:text=MediaPipe%20offers%20cross%2Dplatform%2C%20customizable,desktop%2Fcloud%2C%20web%20and%20IoT)
+    - Also for a very detailed YouTube tutorial by Paul McWhorter, checkout this playlist: [AI For Everyone](https://www.youtube.com/watch?v=gD_HWj_hvbo&list=PLGs0VKk2DiYyXlbJVaE8y1qr24YldYNDm)
     
 >### End of Build Series!
