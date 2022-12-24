@@ -1,3 +1,5 @@
+<img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fk-m-irfan%2FFun_With_Image_Processing%2F&label=VISITORS&countColor=%234285f4" align="right">
+
 # Fun With Image Processing
 
 **Requirements: A Linux (Ubuntu) (Preferred) or Windows Machine with a webcam.**
