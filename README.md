@@ -149,6 +149,10 @@ III. [Bounce Count](#iii-bounce-count)
 
 [**Uploading projects to GitHub**](#uploading-projects-to-github)
 
+[**What Next?**](#what-next)
+
+[**End of Build Series**](#end-of-build-series)
+
 <br>
 
 # Pre-requisite:
