@@ -2307,7 +2307,7 @@ III. [Bounce Count](#iii-bounce-count)
 
 - You can read more and play around with OpenCV and Mediapipe to build cool projects: You can refer these resources below to explore and experiment more in this area.
     - Checkout this website where you can find bunch of cool projects and example codes to play with: [LearnOpenCV](https://learnopencv.com/)
-    - Play around and experiment with the different solutions that Mediapipe offers, like detecting face, hands, pose landmarks, pose and hair segmentation etc. You can find example codes for most of the solutions they provide: [GitHub-Mediapipe](https://google.github.io/mediapipe/#:~:text=MediaPipe%20offers%20cross%2Dplatform%2C%20customizable,desktop%2Fcloud%2C%20web%20and%20IoT)
+    - Play around and experiment with the different solutions that Mediapipe offers, like detecting face, hands, pose landmarks, pose and hair segmentation etc. You can find example codes for most of the solutions they provide: [GitHub-Mediapipe](https://google.github.io/mediapipe/)
     - Also for a very detailed YouTube tutorial by Paul McWhorter, checkout this playlist: [AI For Everyone](https://www.youtube.com/watch?v=gD_HWj_hvbo&list=PLGs0VKk2DiYyXlbJVaE8y1qr24YldYNDm)
     
 >### End of Build Series!
