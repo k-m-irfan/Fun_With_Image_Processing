@@ -2297,7 +2297,7 @@ III. [Bounce Count](#iii-bounce-count)
         
         ![Untitled](./res/Untitled%2046.png)
         
-- Finally, if the `push` was successful, reload or navigate to the “CV_Builder_Series” repo, and you can see all your files have been uploaded to GitHub.
+- Finally, if the `push` was successful, reload or navigate to your repo, and you can see all your files have been uploaded to GitHub.
     
     ![Untitled](./res/Untitled%2047.png)
     
